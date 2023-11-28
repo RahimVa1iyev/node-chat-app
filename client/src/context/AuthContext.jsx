@@ -24,7 +24,6 @@ export const AuthContextProvider = ({ children }) => {
         setUser(JSON.parse(user))
     },[])
 
-    console.log("LoginInfo" ,loginInfo);
 
     const updateRegisterinfo = useCallback((info) => {
         setRegisterInfo(info)
