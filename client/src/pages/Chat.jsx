@@ -15,7 +15,7 @@ const Chat = () => {
       <PotentialChats />
 
       {
-        userChats?.length < 1 ? null : (
+        userChats?.length < 1 ? null : 
           <Stack direction="horizontal" gap={4} className="align-items-start">
             <Stack className="messages-box flex-grow-0 pe-3" >
               {isUserChatsLoading && <p>Loading chats...</p>}
@@ -28,7 +28,7 @@ const Chat = () => {
             </Stack>
             <ChatBox />
           </Stack>
-        )
+        
       }
 
     </Container>
